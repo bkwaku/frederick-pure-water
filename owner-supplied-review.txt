@@ -1,0 +1,8 @@
+// Set the verified number here to enable click-to-call in the header, contact area, and footer.
+export const business = { phone: '202 356 2779', email: 'contact@frederickpurewater.com' };
+// The first review was supplied by the business owner. No reviewer identity or rating was supplied.
+// Replace the remaining slots with actual approved reviews. Use rating: 0 when no rating was supplied.
+export const reviews = [
+ { approved: true, name: 'Customer review', location: '', rating: 0, text: 'frederick pure water exceeded my expectations in every way. From the initial phone call to the completion of the project, their team was friendly, professional, and easy to work with. They showed up when they said they would, provided fair pricing, and completed the job quickly. Their workmanship was excellent, and I will definitely be using them again for future plumbing needs.' },
+ ...Array.from({ length: 9 }, () => ({ approved: false, name: '', location: '', rating: 0, text: '' }))
+];

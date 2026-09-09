@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: frederick-pure-water
+    runtime: node
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm run build:render
+    startCommand: node server.mjs
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: RESEND_API_KEY
+        sync: false
+      - key: LEAD_FROM_EMAIL
+        sync: false
