@@ -23,3 +23,30 @@
 @media(max-width:390px){.nav .brand span{font-size:9px}.nav .brand strong{font-size:15px}.nav .brand>svg{width:26px}.nav .brand{gap:6px}.nav .phone{font-size:14px;padding:8px}.mobile-phone>svg{display:none}.mobile-phone strong{font-size:15px}}
 .review{position:relative;display:flex;flex-direction:column;min-height:315px}.review-person{display:flex;align-items:center;gap:13px;margin:17px 0}.review-avatar{position:relative;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#dbeaf7;color:#164976;font-weight:700;flex-shrink:0;overflow:hidden}.review-avatar img{position:absolute;inset:0;width:48px;height:48px;object-fit:cover}.review-person strong{font-size:16px}.review-person>div>span{display:block;font-size:12px;color:#637d91}.review .review-summary{margin:0 0 22px;line-height:1.75}.review-source{font-size:12px;text-decoration:underline;margin-top:auto}.preview-badge{font-size:10px;letter-spacing:.12em;color:#486b86;border-top:1px solid #dce7ef;padding-top:12px;margin-top:16px}.review .review-stars{margin-top:0;font-size:19px;letter-spacing:3px;color:#a47413}
 .service-areas-section{padding:70px 0;background:#e7f1f9;border-top:1px solid #d3e0ec}.service-areas-section h2{font-size:clamp(2.4rem,3.8vw,3.7rem)}.service-areas-section .section-head{margin-bottom:30px}.county-list{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.county-list li{display:flex;align-items:center;gap:16px;padding:25px;background:#fafcff;border:1px solid #d3e0ec;border-radius:3px;font-size:20px;font-weight:600}.county-list svg{color:#1465a8;flex-shrink:0}.county-list small{display:block;font-size:14px;font-weight:400;color:#536a7c;margin-top:3px}.contact-lines span{align-items:flex-start;max-width:440px}.contact-lines span svg{margin-top:3px}.footer-bottom{gap:20px}@media(max-width:800px){.county-list{grid-template-columns:1fr;gap:12px}.county-list li{padding:20px}.service-areas-section{padding:55px 0}.topbar{font-size:11px}}
+
+/* Keep the consultation visible and actionable within the hero. */
+.hero{grid-template-columns:.9fr 1.1fr;align-items:start}
+.hero-copy{padding-top:64px;position:sticky;top:145px}
+.hero-consultation{overflow:hidden;background:#103555;border-radius:4px;box-shadow:0 18px 48px #173c5b1c}
+.hero-consultation .hero-visual{min-height:260px;border-radius:0}
+.hero-consultation .photo-label{right:auto;bottom:22px;left:22px;padding:16px 19px;font-size:18px}
+.hero-consultation .photo-label svg{width:27px;height:27px}
+.hero-consultation .photo-label span{margin-top:4px;font-size:11px}
+.hero-consultation form{scroll-margin-top:120px;background:#fff;color:#143451;padding:34px}
+.hero-consultation form .eyebrow{color:#63806a;margin-bottom:8px}
+.hero-consultation form h2{font-size:clamp(2rem,2.8vw,2.75rem)}
+.hero-consultation form>p{font-size:13px;margin:8px 0 22px}
+.hero-consultation form .button{width:100%;margin-top:22px}
+.hero-consultation form .form-fine{font-size:11px;color:#637d91;line-height:1.6;margin:13px 0 0}
+
+@media(max-width:800px){
+ .hero{gap:30px}
+ .hero-copy{position:static;padding-top:20px}
+ .hero-consultation .hero-visual{min-height:300px}
+ .hero-consultation form{padding:27px;scroll-margin-top:95px}
+}
+
+@media(max-width:480px){
+ .hero-consultation .hero-visual{min-height:240px}
+ .hero-consultation .photo-label{right:18px;left:18px}
+}
